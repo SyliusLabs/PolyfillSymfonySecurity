@@ -15,9 +15,12 @@
         "symfony/security-bundle": "^4.4 || ^5.2",
         "symfony/security-core": "^4.4 || ^5.2"
     },
+    "conflict": {
+        "symfony/polyfill-mbstring": "1.22.0"
+    },
     "require-dev": {
-        "vimeo/psalm": "4.3.2",
-        "phpunit/phpunit": "^9.5"
+        "phpunit/phpunit": "^9.5",
+        "vimeo/psalm": "4.3.2"
     },
     "autoload": {
         "psr-4": {
