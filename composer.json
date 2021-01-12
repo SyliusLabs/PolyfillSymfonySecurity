@@ -1,0 +1,26 @@
+{
+    "name": "sylius-labs/polyfill-symfony-security",
+    "description": "Symfony Security Polyfill",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kamil Kokot",
+            "email": "kamil@kokot.me",
+            "homepage": "https://kamilkokot.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "symfony/framework-bundle": "^4.4 || ^5.2",
+        "symfony/security-bundle": "^4.4 || ^5.2",
+        "symfony/security-core": "^4.4 || ^5.2"
+    },
+    "require-dev": {
+        "vimeo/psalm": "4.3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "SyliusLabs\\Polyfill\\Symfony\\Security\\": "src/"
+        }
+    }
+}
