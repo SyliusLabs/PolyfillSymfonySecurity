@@ -1,5 +1,6 @@
 {
     "name": "sylius-labs/polyfill-symfony-security",
+    "type": "symfony-bundle",
     "description": "Symfony Security Polyfill",
     "license": "MIT",
     "authors": [
@@ -11,8 +12,8 @@
     ],
     "require": {
         "php": "^7.3 || ^8.0",
-        "symfony/framework-bundle": "^4.4 || ^5.2",
-        "symfony/security-bundle": "^4.4 || ^5.2",
+        "symfony/dependency-injection": "^4.4 || ^5.2",
+        "symfony/http-kernel": "^4.4 || ^5.2",
         "symfony/security-core": "^4.4 || ^5.2"
     },
     "conflict": {
