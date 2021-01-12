@@ -16,11 +16,25 @@
         "symfony/security-core": "^4.4 || ^5.2"
     },
     "require-dev": {
-        "vimeo/psalm": "4.3.2"
+        "vimeo/psalm": "4.3.2",
+        "phpunit/phpunit": "^9.5"
     },
     "autoload": {
         "psr-4": {
             "SyliusLabs\\Polyfill\\Symfony\\Security\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\SyliusLabs\\Polyfill\\Symfony\\Security\\": "tests/"
+        }
+    },
+    "scripts": {
+        "analyse": [
+            "vendor/bin/psalm"
+        ],
+        "test": [
+            "vendor/bin/phpunit --colors=always"
+        ]
     }
 }
