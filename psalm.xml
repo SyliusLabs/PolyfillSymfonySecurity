@@ -15,5 +15,10 @@
     </projectFiles>
 
     <issueHandlers>
+        <DuplicateClass>
+            <errorLevel type="suppress">
+                <file name="src/Core/User/UserInterface.php" />
+            </errorLevel>
+        </DuplicateClass>
     </issueHandlers>
 </psalm>

@@ -16,18 +16,8 @@ use Symfony\Component\Security\Core\User\UserInterface;
  */
 final class UserChecker implements UserCheckerInterface
 {
-    /** @var UserCheckerInterface */
-    private $userChecker;
-
-    public function __construct(UserCheckerInterface $userChecker)
-    {
-        $this->userChecker = $userChecker;
-    }
-
     public function checkPreAuth(UserInterface $user): void
     {
-        $this->userChecker->checkPreAuth($user);
-
         if (!$user instanceof AdvancedUserInterface) {
             return;
         }
@@ -53,8 +43,6 @@ final class UserChecker implements UserCheckerInterface
 
     public function checkPostAuth(UserInterface $user): void
     {
-        $this->userChecker->checkPostAuth($user);
-
         if (!$user instanceof AdvancedUserInterface) {
             return;
         }

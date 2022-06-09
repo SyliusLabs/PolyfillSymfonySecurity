@@ -5,12 +5,10 @@ declare(strict_types=1);
 namespace SyliusLabs\Polyfill\Symfony\Security\Core\User;
 
 use Symfony\Component\Security\Core\User\AdvancedUserInterface as SymfonyAdvancedUserInterface;
-use Symfony\Component\Security\Core\User\UserInterface;
 
 if (\interface_exists(SymfonyAdvancedUserInterface::class)) {
     interface AdvancedUserInterface extends SymfonyAdvancedUserInterface
     {
-
     }
 } else {
     /**
