@@ -6,7 +6,7 @@ namespace SyliusLabs\Polyfill\Symfony\Security\Core\Encoder;
 
 use Symfony\Component\Security\Core\Encoder\EncoderAwareInterface as SymfonyEncoderAwareInterface;
 
-if (interface_exists(EncoderAwareInterface::class)) {
+if (\interface_exists(EncoderAwareInterface::class)) {
     interface EncoderAwareInterface extends SymfonyEncoderAwareInterface
     {
     }
