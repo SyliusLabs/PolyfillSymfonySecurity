@@ -9,12 +9,22 @@
         <directory name="src" />
         <ignoreFiles>
             <directory name="vendor" />
-
-            <file name="src/Core/User/AdvancedUserInterface.php" />
         </ignoreFiles>
     </projectFiles>
 
     <issueHandlers>
+        <UndefinedClass>
+            <errorLevel type="suppress">
+                <file name="src/Core/Encoder/EncoderAwareInterface.php" />
+                <file name="src/Core/User/AdvancedUserInterface.php" />
+            </errorLevel>
+        </UndefinedClass>
+        <UnrecognizedStatement>
+            <errorLevel type="suppress">
+                <file name="src/Core/Encoder/EncoderAwareInterface.php" />
+                <file name="src/Core/User/AdvancedUserInterface.php" />
+            </errorLevel>
+        </UnrecognizedStatement>
         <DuplicateClass>
             <errorLevel type="suppress">
                 <file name="src/Core/User/UserInterface.php" />
