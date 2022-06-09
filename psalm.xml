@@ -15,6 +15,7 @@
     <issueHandlers>
         <UndefinedClass>
             <errorLevel type="suppress">
+                <file name="src/Core/Encoder/EncoderAwareInterface.php" />
                 <file name="src/Core/User/AdvancedUserInterface.php" />
             </errorLevel>
         </UndefinedClass>
