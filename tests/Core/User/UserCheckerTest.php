@@ -11,16 +11,14 @@ use Symfony\Component\Security\Core\Exception\AccountExpiredException;
 use Symfony\Component\Security\Core\Exception\CredentialsExpiredException;
 use Symfony\Component\Security\Core\Exception\DisabledException;
 use Symfony\Component\Security\Core\Exception\LockedException;
-use Symfony\Component\Security\Core\User\UserChecker as SymfonyUserChecker;
 
 final class UserCheckerTest extends TestCase
 {
-    /** @var UserChecker */
-    private $userChecker;
+    private UserChecker $userChecker;
 
     protected function setUp(): void
     {
-        $this->userChecker = new UserChecker(new SymfonyUserChecker());
+        $this->userChecker = new UserChecker();
     }
 
     /** @test */
