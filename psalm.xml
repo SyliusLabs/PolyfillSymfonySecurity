@@ -13,6 +13,11 @@
     </projectFiles>
 
     <issueHandlers>
+        <DeprecatedClass>
+            <errorLevel type="suppress">
+                <file name="src/Core/Exception/UserNotFoundException.php" />
+            </errorLevel>
+        </DeprecatedClass>
         <UndefinedClass>
             <errorLevel type="suppress">
                 <file name="src/Core/Encoder/EncoderAwareInterface.php" />
