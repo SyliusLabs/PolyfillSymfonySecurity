@@ -23,6 +23,11 @@
         "phpunit/phpunit": "^9.5",
         "vimeo/psalm": "^4.23"
     },
+    "config": {
+        "allow-plugins": {
+            "symfony/flex": true
+        }
+    },
     "autoload": {
         "psr-4": {
             "SyliusLabs\\Polyfill\\Symfony\\Security\\": "src/"
